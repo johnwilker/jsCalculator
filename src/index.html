@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist//output.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/190/190708.png" type="image/x-icon">
+  <title>JavaScript Calculator</title>
+</head>
+<body class="p-0 m-0 box-border bg-gray-800">
+  <div class="container my-11 mx-auto w-80">
+    <header class="header flex mx-2.5 gap-2.5 w-76 h-14 items-center">
+      <img class="h-14 w-14" src="https://cdn-icons-png.flaticon.com/512/190/190708.png" alt="Imagem de uma calculadora">
+      <h1 class="text-2xl text-gray-100 font-semibold">
+        <span>CALCULADORA:</span>
+        <span>HORA DE TRABALHO</span>
+      </h1>
+    </header>
+  
+
+    <div class="form mt-14 mb-5.5 ml-2.5 w-80">
+      <form class="flex flex-col " id="form" action="">
+        <label class="text-base mb-1 text-gray-100" for="horasDiarias">Horas diárias trabalhadas:</label>
+        <input id="horasDiarias" class="bg-transparent border-b-[2px] border-sky-600 outline-none text-gray-50 mb-2" type="number">
+
+        <label class="text-base mb-1 text-gray-100" for="diasMes">Dias trabalhados no mês:</label>
+        <input id="diasMes" class="bg-transparent border-b-[2px] border-sky-600 outline-none text-gray-50 mb-2" type="number">
+        
+        <label class="text-base mb-1 text-gray-100" for="despesas">Despesas fixas:</label>
+        <input id="despesas" class="bg-transparent border-b-[2px] border-sky-600 outline-none text-gray-50 mb-2" type="number">
+
+        <label class="text-base mb-1 text-gray-100" for="equipamento">Valor do seu equipamento:</label>
+        <input id="equipamento" class="bg-transparent border-b-[2px] border-sky-600 outline-none text-gray-50 mb-2 cursor-text" type="number">
+
+        <button id="calcular" class="w-full bg-sky-600 text-gray-50 border-none py-3 px-18 crusor-pointer rounded-md">CALCULAR AGORA</button>
+      </form>
+    </div>
+
+    <div id="resultado" class="hidden flex flex-col text-center w-80 ml-2.5 bg-sky-600 text-gray-50 py-3.5 px-5.5 rounded-md">
+      <span class="text-base">VALOR DA HORA TRABALHADA</span>
+      <span id="valorTotal" class="text-4xl font-semibold">R$ 50,00</span>
+      <p class="text-sm">Com este valor você irá cobrir suas despesas e ter 50% de lucro</p>
+    </div>
+
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
